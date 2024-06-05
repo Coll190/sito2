@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti</title>
+    <!-- Collegamenti esterni -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+    <nav class="navbar bg-transparent navbar-expand-lg fixed-top">
+      <p class="logo">Vanessa Ruggeri</p>
+      <div class="off-screen-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Wedding</a></li>
+        <li><a href="#">Family</a></li>
+        <li><a href="experience.html">Client Experiences</a></li>
+        <li><a href="about.html">About Me</li>
+        <li><a href="contatti.html">Contatti</a></li>
+     </ul>
+     </div>
+
+     <!-- Menu -->
+     <div class="ham-menu">
+      <span class="sp"></span>
+      <span class="sp"></span>
+      <span class="sp"></span>
+    </div>
+    </nav>  
+<!-- presentazione -->
+    <div>
+        <img src="Filemail.com files 5_11_2024 lqdazlvffgcrngf/vanessa foto miste/VR704225-2.jpg" alt="" class="img">
+    </div>
+    <div class="carousel-caption d-none d-md-block">
+          <h1>Conosciamoci meglio</h1>
+        </div>
+  </div>
+  
+  <!-- form -->
+  <div class="form">
+    <h2 class="cont">Scrivimi</h2>
+    <form id="contact-form">
+      <input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="NOME" value="" type="text" id="your-nome">
+      <input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="COGNOME" value="" type="text" id="your-cognome">
+      <input size="40" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="EMAIL" value="" type="email" id="your-email">
+      <input size="40" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="CELLULARE" value="" type="text" id="your-cellulare">
+      <input size="40" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="TIPOLOGIA" value="" type="text" id="your-tipologia">
+      <input size="40" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="MESSAGGIO" value="" type="text" id="your-messaggio">
+        <button class="invia"onclick="sendMail()" type="submit">Invia</button>
+    </form>
+  </div>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "DOBulfDcU1zpUZZni",
+      });
+   })();
+</script>
+  <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Vanessa Ruggeri. Tutti i diritti riservati.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/nomefotografo" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/nomefotografo" class="fa fa-instagram"></a>
+            <a href="https://www.twitter.com/nomefotografo" class="fa fa-twitter"></a>
+        </div>
+    </footer>
+    <script src="server.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin
